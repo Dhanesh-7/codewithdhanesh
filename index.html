@@ -1,136 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon cursor by dhanesh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html, #app {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #app {
+      overflow: hidden;
+      touch-action: pan-up;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+    }
+
+    #app h1 {
+      --fontSize: 40px;
+      --lineHeight: 80px;
+      width: auto;
+      height: calc(2 * var(--lineHeight));
+      line-height: var(--lineHeight);
+      margin: calc(50vh - var(--lineHeight)) auto 0;
+      font-size: var(--fontSize);
+      text-transform: uppercase;
+    }
+
+    #app a {
+      margin-top: 10px;
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    #app canvas {
+      display: block;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <h1><i>DHANESH SURESH</i></h1>
-        <H2>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</H2>
-        <h1 id="Introduction"><i>Introduction:</i></h1>
-        <p>Hello! I am Dhanesh, A building web developer with a passion for creating interactive and user-friendly websites</p>
+  <div id="app">
+    <div id="hero">
+      <h1>NEON<br/>CURSOR<br/></h1>
     </div>
+  </div>
+  <script type="module">
+    import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js';
 
-    <div>
-        <img src="../IMG_20240709_211951_568.jpg" alt="my photo" width="250" height="250" >
-    </div>
-
-    <div>
-        <ul>
-            <li><a href="#Introduction">Introduction</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <div id="education">
-        <h1><i>Education:</i></h1>
-        <ul>
-            <li>Bachelor of Engineering in Information Technology - Annamalai University</li>
-            <li>High School - VRP Hr.sec School -  Villupuram</li>
-            <li>Primary and Secondary Education at Ramakrishna Mission Vidyalaya Matric Hr.Sec School - Villupuram</li>
-            <li>Finished Full Stack Course in CSC - Chidambaram - Annamalai Nagar</li>
-        </ul>
-    </div>
-
-    <div>
-        <h1><i>Education Summary:</i></h1>
-        <table border="1">
-            <tr>
-                <th>Degree</th>
-                <th>Institution</th>
-                <th>Year of Passing</th>
-            </tr>
-            <tr>
-                <td>Bachelor of Engineering in Information Technology</td>
-                <td>Annamalai University</td>
-                <td>2026</td>
-            </tr>
-            <tr>
-                <td>High School</td>
-                <td>VRP Hr.sec School</td>
-                <td>2022</td>
-            </tr>
-            <tr>
-                <td>Primary and Secondary Education</td>
-                <td>Ramakrishna Mission Vidyalaya Matric Hr.Sec School</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>Full Stack Course</td>
-                <td>CSC</td>
-                <td>2024</td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="Skills">
-        <h1><i>Skills:</i></h1>
-        <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>WordPress</li>
-            <li>Photo Editing</li>
-            <li>Video Editing</li>
-        </ul>
-        <dl>
-            <dt>C :</dt>
-            <dd>General-purpose Programming Language for System Programming and Embedded Systems</dd>
-            <dt>C++ :</dt>
-            <dd>General-purpose Programming Language with Object-oriented and Generic Programming Features</dd>
-            <dt>Java :</dt>
-            <dd>High-level, Class-based, Object-oriented Programming Language for Building Cross-platform Applications</dd>
-            <dt>Python :</dt>
-            <dd>High-level Programming Language for general-purpose programming</dd>
-            <dt>HTML :</dt>
-            <dd>Markup Language for Creating Web Pages</dd>
-            <dt>CSS :</dt>
-            <dd>Style Sheets Language for Styling Web Pages</dd>
-            <dt>JavaScript :</dt>
-            <dd>Programming Language for Adding Interactivity to Web Pages</dd>
-            <dt>SQL :</dt>
-            <dd>Standard Language for Managing and Manipulating Databases</dd>
-            <dt>WordPress :</dt>
-            <dd>Open-source Content Management System for Building and Managing Websites</dd>
-            <dt>Photo Editing :</dt>
-            <dd>Process of Altering Images to Improve Their Appearance or Suit a Specific Purpose</dd>
-            <dt>Video Editing :</dt>
-            <dd>Process of Manipulating and Rearranging Video Shots to Create a New Work</dd>
-        </dl>
-    </div>
-    <div id="projects">
-        <h1><i>Projects:</i></h1>
-        <ul>
-            <li>Project 1: <a href="D:\dhanesh python vs\projects\tesla_ML.ipynb"> Stock Price Prediction (TESLA)</a></li>
-            <li>Project 2: <a href="D:\dhanesh python vs\projects\flames.py"> Flames Game</a></li>
-            <li>Project 3: <a href="D:\dhanesh python vs\projects\pedestrain_chk.py">Pedestrain Checker in Traffic Areas</a></li>
-            <li>Project 4: <a href="C:\Program Files\Python312\dhanesh projects\mastermind_game.py">Mastermind Game using python</a></li>
-            <li>Project 5: <a href="D:\dhanesh python vs\projects\blockchain.py">Simple Blockchain Hash values using Python</a></li>
-        </ul>
-    </div>
-
-    <div id="Contact">
-        <h1><i>Contact Me:</i></h1>
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" required><br></br>
-            <label for="Email">Email:</label>
-            <input type="text" required  ><br></br>
-            <label for="Message">Message:</label>
-            <textarea required></textarea><br></br>
-            <button>Submit</button><br></br>
-            <footer>&copy; 2024 <i>Dhanesh Suresh</i></footer><br></br>
-        </form>
-    </div>
+neonCursor({
+    el: document.getElementById('app'),
+    shaderPoints: 16,
+    curvePoints: 80,
+    curveLerp: 0.5,
+    radius1: 5,
+    radius2: 30,
+    velocityTreshold: 10,
+    sleepRadiusX: 100,
+    sleepRadiusY: 100,
+    sleepTimeCoefX: 0.0025,
+    sleepTimeCoefY: 0.0025
+});
+  </script>
 </body>
 </html>
