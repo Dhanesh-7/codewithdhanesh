@@ -1,0 +1,121 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}   
+.logocontainer{
+    display: flex;
+    align-items: center;
+}
+.header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(135, 177, 163);
+    color: white;
+    padding: 10px;
+    
+
+}
+.header:hover{
+    border: 3px solid rgb(234, 231, 231);
+    border-radius: 2px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #7c286dd0;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+}
+nav:hover{
+    border: 3px solid black;
+    border-radius: 2px;
+}
+
+a{
+    
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(231, 111, 211);
+    border: 10px;
+    border-radius: 5px;
+}
+.nav a:last-child{
+    margin-right: 0;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding:20px;
+}
+.productlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap: 10px;
+}
+.p{
+    background-color: white;
+    
+    padding: 10px;
+    text-align: center;
+}
+.p img{
+    max-width: 100%;
+    height: auto;
+}
+.sidebar{
+    background-color: #f0f0f0;
+    padding: 50px;
+
+}
+.footer{
+    background-color: cornflowerblue;;
+    color:black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+.sidebar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+.h12:hover{
+    color: rgb(231, 111, 211);
+    background-color:rgba(153, 165, 42, 0.148) ;
+    font-variant: small-caps;
+    display: inline-block;
+}
+.sidebar h1:hover{
+    color: cadetblue;
+}
+.dhan:hover{
+    color: darkorange;
+}
+.dha:hover{
+    color: deeppink;
+}
+.sidebar:hover{
+    background-color: rgba(153, 165, 42, 0.148);
+}
+.h13:hover{
+    color: #7c286dd0;;
+}
+img{
+    text-align: left;
+}
+.twit{
+    padding-left: 1%;
+}
+.whats{
+    padding-left: 1%;
+}
+.tele{
+    padding-left: 1%;
+}
