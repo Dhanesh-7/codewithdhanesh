@@ -1,0 +1,66 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 50px;
+    color: white;
+    text-align: center;
+    
+}
+img{
+    align-items: center;
+    border-radius: 100%;
+}
+nav{
+    background-color: rgba(27, 26, 29, 0.536);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row ;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border: 1px solid rgb(10, 4, 15);
+    background-color: rgba(56, 54, 56, 0.118);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 1px 2px 1px 2px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}.edu{
+    margin: 15px 0px 15px 0px;
+    border: 2px solid wheat;
+    background-color: antiquewhite;
+    padding: 25px;
+}
+.info{
+    margin: 15px 0px 15px 0px;
+    border: 2px solid wheat;
+    background-color: antiquewhite;
+    padding: 25px;
+}
+.project{
+    margin: 15px 0px 15px 0px;
+    border: 2px solid wheat;
+    background-color: antiquewhite;
+    padding: 25px;
+}
+.li1 a{
+    text-decoration: none;
+}
+.Contact{
+    margin: 15px 0px 15px 0px;
+    border: 2px solid wheat;
+    background-color: antiquewhite;
+    padding: 25px;
+}
