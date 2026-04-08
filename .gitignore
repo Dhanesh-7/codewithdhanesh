@@ -1,0 +1,23 @@
+# IDE/System files
+.vscode/
+.idea/
+.DS_Store
+.gemini/
+.env
+
+# Dependencies
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server/server_log.txt
+
+# Large files / OS specific
+C:/Users/USER/
+Thumbs.db
